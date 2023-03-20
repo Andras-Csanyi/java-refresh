@@ -40,6 +40,7 @@ public class AllMatch {
         assertThat(isMatch).isTrue();
     }
 
+    @Test
     public void allMatchPrimitiveLong() {
         LongStream longStream = LongStream.of(1, 2, 3, 4);
         boolean isMatch = longStream.allMatch(v -> v < 5);
